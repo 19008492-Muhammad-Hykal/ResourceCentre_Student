@@ -10,10 +10,11 @@ public class Chromebook extends Item{
 	public String getOs() {
 		return os;
 	}
-	//TBC by Kaiqi
+	//TBC by Kaiqi //Done by Bryent
 	public String toString(){
 		String output = "";
 		// Write your codes here
+		output += String.format("%s,%s,%d",this.getAssetTag(),this.getDescription(),this.getOs());
 		return output;
 	}
 }
