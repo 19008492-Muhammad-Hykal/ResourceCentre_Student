@@ -145,11 +145,33 @@ public class ResourceCentreTest {
 		// write your code here
 		
 	}
+	
+	
+	//Done By Hykal 22/7/20202
 	@Test
 	public void doReturnChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
-	}
+		
+		//Let's load the list!!
+		assertNotNull("Is the list of Chromebooks available?", chromebookList);
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		ResourceCentre.addChromebook(chromebookList, cb2);
+						
+		//Error Condition
+		Boolean isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
+		assertFalse("Is available Chromebook CB0011 returned (false)?", isReturned);
+						
+		//Normal Condition
+		cb2.setIsAvailable(false);
+		isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0012");
+		assertTrue("Is borrowed Chromebook CB0012 returned (true)?", isReturned);
+						
+		//Error
+		isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0013");
+		assertTrue("Is non-existent Chromebook CB0013 returned (false)?", isReturned);
+			}
+
 	
 	@After
 	public void tearDown() throws Exception {
