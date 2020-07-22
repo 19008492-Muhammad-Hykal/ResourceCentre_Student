@@ -121,11 +121,14 @@ public class ResourceCentreTest {
 	}
 
 	@Test
+	//Done By Bryent
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
 		//Test if there is valid Camcorder arraylist to loan from
 				assertNotNull("Test if there is valid Camcorder arraylist to loan from", camcorderList);
+				
+				
 	}
 	
 	@Test
@@ -140,9 +143,16 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
+	//Done by Bryent
 	public void doReturnCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		ResourceCentre.addCamcorder(camcorderList, cc1);
+		//Test if there is valid Camcorder arraylist to return to
+		assertNotNull("Test if there is valid camcorder arraylist to loan from", camcorderList);
+		//Check that available Camcorder CC0011 is returned - False (not return yet)
+		Boolean isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CB0011");
+		assertFalse("Is available Chromebook CB0011 returned (false)?", isReturned);
 		
 	}
 	
