@@ -10,10 +10,11 @@ public class Camcorder extends Item{
 	public int getOpticalZoom() {
 		return opticalZoom;
 	}
-	
+	//Done By Bryent
 	public String toString(){
 		String output = "";
 		// Write your codes here
+		output += String.format("%s,%s,%d",this.getAssetTag(),this.getDescription(),this.getOpticalZoom());
 		return output;
 	}
 }
