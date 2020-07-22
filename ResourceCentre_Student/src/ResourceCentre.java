@@ -145,7 +145,6 @@ public class ResourceCentre {
     //Changed by Kaiqi
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
@@ -179,8 +178,14 @@ public class ResourceCentre {
 	
 	//To be Done by Hykal 22/7/2020
 	public static Chromebook inputChromebook() {	
-		Chromebook cb =null;
+		//Chromebook cb =null;
 		// write your code here
+		
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("enter description > ");
+		String os = Helper.readString("Enter Operating System > ");
+		Chromebook cb = new Chromebook(tag,description,os);
+	
 		
 		return cb;
 		
@@ -189,6 +194,9 @@ public class ResourceCentre {
 	//To be Done by Hykal 22/7/2020
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		
+		chromebookList.add(cb);
+		System.out.println("Chromebook Added");
 	}
 	
 	//================================= Option 3 Loan =================================
