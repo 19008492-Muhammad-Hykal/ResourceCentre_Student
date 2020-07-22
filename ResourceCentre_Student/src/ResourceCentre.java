@@ -220,11 +220,12 @@ public class ResourceCentre {
 			System.out.println("Camcorder " + tag + " loaned out");
 		}
 	}
-	
+	//TBD by Bryent
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
 		// write your code here
 		return true;
 	}
+	//TBD by Bryent
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
 		
