@@ -118,6 +118,10 @@ public class ResourceCentreTest {
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		//Test if there is valid Chromebook arraylist to loan from
+				assertNotNull("Test if there is valid Chromebook arraylist to loan from", chromebookList);
+	
+		
 	}
 	
 	@Test
