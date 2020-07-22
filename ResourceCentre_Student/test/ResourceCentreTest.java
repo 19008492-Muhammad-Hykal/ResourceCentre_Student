@@ -124,11 +124,12 @@ public class ResourceCentreTest {
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		//Test if there is valid Camcorder arraylist to loan from
+				assertNotNull("Test if there is valid Camcorder arraylist to loan from", camcorderList);
 	}
 	
 	@Test
-	//TBD by Bryent
+	//Done by Bryent
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
