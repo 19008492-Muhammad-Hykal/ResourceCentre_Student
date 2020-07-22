@@ -93,6 +93,7 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
+	//TBD by Bryent
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
