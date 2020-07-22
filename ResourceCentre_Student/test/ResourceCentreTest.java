@@ -79,7 +79,7 @@ public class ResourceCentreTest {
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
 	}
-	//Changes by kaiqi
+	//Changes by Kaiqi
 	@Test
 	public void retrieveAllChromebookTest() {
 		//fail("Not yet implemented");
