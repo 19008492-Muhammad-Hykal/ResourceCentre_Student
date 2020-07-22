@@ -177,12 +177,16 @@ public class ResourceCentre {
 		System.out.println("Camcorder added");
 	}
 	
+	//To be Done by Hykal 22/7/2020
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		
 		return cb;
 		
 	}	
+	
+	//To be Done by Hykal 22/7/2020
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
 	}
